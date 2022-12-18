@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jamil's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Portfolio</h1>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <img src="my_photo.jpg" alt="My photo" class="profile-pic">
+        </div>
+        <div class="container">
+          <h2>About</h2>
+          <p>Hi, my name is Jamil and I am a second-year master's degree student in data science and big data. I am extremely interested in data science and have a strong passion for AI, computer vision, and generative models. I enjoy using my skills and knowledge to help solve real-world problems and make a positive impact on society. In my spare time, I enjoy learning about the latest developments in my field and staying up-to-date with the latest technologies and techniques. I am always looking for new challenges and opportunities to grow and expand my expertise.</p>
+        </div>
+      </section>
+      <section id="education" class="section">
+        <div class="container">
+          <h2>Education</h2>
+          <table>
+            <tr>
+              
+              <th>Diploma</th>
+              <th>Year obtained</th>
+              <th>Field</th>
+              
+              <th>Establishment</th>
+            </tr>
+            <tr>
+              
+              <td>High school diploma</td>
+              <td>2018</td>
+              <td>Mathematics</td>
+              <td>Moulay Rachid High school , Arfoud</td>
+              <tr>
+                
+                <td>Bachelor's degree</td>
+                <td>July 2021</td>
+                <td>Software engineering</td>
+              
+                <td>Faculty of sciences and technologies, Errachidia, University of Moulay Ismail Meknes, Morocco</td>
+              </tr>
+              
+              <tr>
+                
+                <td>Master 2</td>
+                <td>July 2023</td>
+                <td>Data science</td>
+                
+                <td>Faculty of sciences, University of Hassan II Casablanca, Morocco</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section id="projects" class="section">
+          <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="slider">
+              <div class="project">
+                <div class="project-info">
+                  <h3 class="project-title">Classification model of road signs in Morocco</h3>
+                  <p class="project-date">October 2022</p>
+                </div>
+                <ul class="project-details">
+                  <li>Deploy in a web page a classification model of road signs in Morocco</li>
+                  <li>Tools: Pycharm, Python, Tensorflow, Keras, JavaScript, Flask, Docker, Git, Github</li>
+                </ul>
+              </div>
+              <div class="project">
+                <div class="project-info">
+                  <h3 class="project-title">Artificial intelligence for medicinal plant detection</h3>
+                  <p class="project-date">May 2022</p>
+                </div>
+                <ul class="project-details">
+                  <li>M1 project</li>
+                  <li>Tools: Google Colab, Tensorflow, Keras</li>
+                </ul>
+              </div>
+              <div class="project">
+                <div class="project-info">
+                  <h3 class="project-title">Installation and Configuration of Hadoop</h3>
+                  <p class="project-date">March 2022</p>
+                </div>
+                <ul class="project-details">
+                  <li>Installation and Configuring Hadoop in fully-distributed mode (Hadoop, MapReduce, Yarn, Hive, Hbase, Sqoop)</li>
+                  <li>Visualization and analysis of a massive dataset (teamwork)</li>
+                  <li>Materials: 5 computers with Ubuntu 18.04, Ethernet switch, Rj45 cables</li>
+                  <li>Tools: Hadoop, MapReduce, Yarn, Hive, Hbase, Sqoop, Java, Shell scripting, ssh server, pandas, matplotlib, Tableau</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="skills" class="section">
+          <div class="container">
+            <h2>Skills</h2>
+            <ul>
+              <li>Programming languages: Python, C/C++</li>
+              <li>Web development: HTML/CSS, JavaScript, Django, Flask, FastAPI</li>
+              <li>Operating systems: Windows, Linux</li>
+              <li>Probability and statistics</li>
+              <li>Predictive analytics</li>
+              <li>Data analysis tools: PowerBI, Qlik Sense, Microsoft Excel</li>
+              <li>Web scraping: Selenium, Beautiful Soup, Scrapy</li>
+              <li>Data mining: Pandas, NumPy, Seaborn, Matplotlib</li>
+              <li>Data query: SQL (MySQL), NoSQL (MongoDB)</li>
+              <li>Machine learning and deep learning: scikit-learn, TensorFlow, Keras</li>
+              <li>Natural language processing: NLTK</li>
+              <li>MLOps: Git/GitHub, Docker</li>
+              <li>Big data technologies: Hadoop, Spark, HBase, MapReduce, Yarn, Hive, Sqoop, NiFi</li>
+              <li>Cloud computing: GCP, Azure</li>
+            </ul>
+          </div>
+        </section>
+        <section id="contact" class="section">
+          <div class="container">
+            <h2>Contact</h2>
+            <p>Email: jamilmeftahi@hotmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jamilmeftahi/">My LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/JamilMeftahi/">My GitHub Profile</a></p>
+            </div>
+            </section>
+            </main>
+            <footer>
+            <div class="container">
+            <p>iJamil--2022</p>
+            </div>
+            </footer>
+            </body>
+            <script>
+              $(document).ready(function() {
+                $('.slider').slick({
+                  autoplay: true,
+                  dots: true,
+                  arrows: false,
+                  speed: 500,
+                  fade: true,
+                  cssEase: 'linear'
+                });
+              });
+            </script>
+            
+            </html>
+    
